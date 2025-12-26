@@ -23,7 +23,7 @@ const home = () => {
 
 
     const handleClick = async () => {
-        // const ai = new GoogleGenAI({apiKey: "AIzaSyBvUsi4AWd_xoL93mgriIM6owHU-ebnrWc"});
+        // const ai = new GoogleGenAI({apiKey: "<>"});
 
 
 
