@@ -23,8 +23,7 @@ const Home = () => {
 
 
     const handleClick = async () => {
-        console.log("hello")
-        // const ai = new GoogleGenAI({apiKey: "AIzaSyBvUsi4AWd_xoL93mgriIM6owHU-ebnrWc"});
+        // const ai = new GoogleGenAI({apiKey: "<>"});
 
 
 
@@ -60,4 +59,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default home
