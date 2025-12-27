@@ -3,7 +3,7 @@ import React from 'react'
 import { GoogleGenAI } from '@google/genai'
 import { useNavigate } from 'react-router-dom'
 
-const home = () => {
+const Home = () => {
     const navigate = useNavigate()
     const getPrompt = () => {
         return `You are an AI interview engine.
@@ -23,6 +23,7 @@ const home = () => {
 
 
     const handleClick = async () => {
+        console.log("hello")
         // const ai = new GoogleGenAI({apiKey: "AIzaSyBvUsi4AWd_xoL93mgriIM6owHU-ebnrWc"});
 
 
@@ -45,7 +46,7 @@ const home = () => {
                 "Given an `Employee` table with columns `Id`, `Name`, and `Salary`, write a SQL query to find the Nth highest salary. Discuss how your solution handles edge cases like fewer than N employees or duplicate salaries."
             ]
         }
-        const resp = await axios.post("http://localhost:8080/interview", req);
+        const resp = await axios.post("http://localhost:3000/interview", req);
         if(resp.status == 200){
             navigate('/nextstep')
         }
@@ -59,4 +60,4 @@ const home = () => {
     )
 }
 
-export default home
+export default Home

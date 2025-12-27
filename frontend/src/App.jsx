@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './components/home'
-import nextstep from './components/nextstep'
+import Nextstep from './components/nextstep'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,9 +14,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
-      </Routes>
-      <Routes>
-        <Route path='/nextstep' element={<nextstep/>}></Route>
+        <Route path='/nextstep' element={<Nextstep/>}></Route>
       </Routes>
     </BrowserRouter>
     </>

@@ -3,6 +3,7 @@ const app = express()
 const sequelize = require('./config/mysql')
 const Interview = require('./model/interview')
 const interviewRoutes = require('./router/interviewRoutes')
+const questionRouter = require('./router/questionRouter')
 const cors = require('cors')
 
 
@@ -14,7 +15,7 @@ app.use(cors({
 }))
 app.use(express.json())
 app.use('/interview', interviewRoutes)
-
+app.use('/questions', questionRouter)
 
 
 async function start() {
@@ -25,4 +26,4 @@ async function start() {
 
 start()
 
-app.listen(8080);
+app.listen(3000);
